@@ -1,0 +1,6 @@
+	{
+    	  "rewrites": [
+    	    { "source": "/(.*)", "destination": "https://shorts-videos-apps.vercel.app/" }
+    	  ]
+    }
+    

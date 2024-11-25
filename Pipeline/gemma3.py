@@ -4,17 +4,19 @@ import json
 import logging
 from pymongo import MongoClient
 from datetime import datetime
+from dotenv import load_dotenv
 
+load_dotenv()
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # MongoDB Configuration
-MONGO_URI = "mongodb+srv://rameshgudpawar:Ramesh@cluster0.a74wx6z.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
-DB_NAME = "test"
-COLLECTION_NAME = "products"
+MONGO_URI = os.getenv("MONGO_URI")
+DB_NAME = os.getenv("DB_NAME")
+COLLECTION_NAME = os.getenv("COLLECTION_NAME")
 
 # Configure the Gemini API
-genai.configure(api_key="AIzaSyC0oKVxPwznpzXCjtezB0iAyOA6mqfm9bU")
+genai.configure(api_key=os.getenv("GENAI_API_KEY"))
 model = genai.GenerativeModel(model_name="gemini-1.5-flash")
 
 class MongoDBHandler:

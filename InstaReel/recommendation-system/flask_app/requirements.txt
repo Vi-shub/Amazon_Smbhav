@@ -1,0 +1,14 @@
+blinker
+click
+colorama
+Flask
+itsdangerous
+Jinja2
+numpy
+pandas 
+pymongo
+python-dateutil
+python-dotenv
+Werkzeug
+flask-cors
+scikit-learn  
