@@ -5,7 +5,7 @@ import logging
 from pymongo import MongoClient
 from datetime import datetime
 from dotenv import load_dotenv
-
+import os
 load_dotenv()
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
