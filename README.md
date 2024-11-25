@@ -1,7 +1,7 @@
 # Amazon Clone with Data Pipelines
 
 A fully functional Amazon clone with automated data extraction pipelines for products and reels.
-
+## Deployed Link : https://amazon-clone-swart-six.vercel.app 
 ## 🌟 Features
 
 - Full e-commerce functionality with user authentication
